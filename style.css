@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    background: lightsalmon;
+    color: darkmagenta;
+}
+
+.mobile {
+    background: darkmagenta;
+    color: lightsalmon;
+}
+
+.tablet {
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+    display: none;
+}
+
+.desktop {
+    background: darkgoldenrod;
+    color: lemonchiffon;
+    display: none;
+}
+
+/*Tablet-näkymän säännöt */
+@media only screen and (min-width: 426px)
+{
+    body {
+        background: darkolivegreen;
+        color: blanchedalmond;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 770px)
+{
+    body {
+        background: lemonchiffon;
+        color: darkgoldenrod;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
+
